@@ -1,0 +1,31 @@
+.empty-error,
+.incomplete-error {
+  display: none;
+  position: absolute;
+  top: 1.9rem;
+  right: 2.1rem;
+  z-index: 5;
+
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: #ee0029;
+
+  @media (max-width: 34.375em) {
+    top: 1.3rem;
+    right: 1.3rem;
+  }
+
+  @media (max-width: 30em) {
+    position: relative;
+    top: 0;
+    right: 0;
+    padding-left: 1.4rem;
+    line-height: 1.4rem;
+    margin-top: 0.3rem;
+  }
+}
+
+.empty-error-visible,
+.incomplete-error-visible {
+  display: block;
+}

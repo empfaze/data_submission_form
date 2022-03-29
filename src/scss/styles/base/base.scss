@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: $color_text;
+}
+
+body.desktop *:focus {
+  outline: 2px dashed grey;
+  outline-offset: 2px;
+}
+
+body.mobile *:focus {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  background-color: $color_bg;
+  font-family: $font_regular;
+}
+
+.lock {
+  position: fixed;
+  overflow-y: scroll;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: $color_text;
+  text-decoration: none;
+}
+
+.submit-spinner {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: -0.125em;
+  border: 0.2em solid #808080;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: 0.75s linear infinite spinner-border;
+  animation: 0.75s linear infinite spinner-border;
+  margin-left: 1rem;
+}

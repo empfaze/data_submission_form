@@ -1,0 +1,64 @@
+.logos {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    max-width: 35.4rem;
+
+    @media (max-width: 31.25em) {
+      max-width: 26.4rem;
+    }
+  }
+}
+
+.reinvest {
+  margin: 3.3rem 0 2rem;
+
+  @media (max-width: 31.25em) {
+    margin: 2.5rem 0 1.5rem;
+  }
+
+  &__logo-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__logo {
+    cursor: pointer;
+    width: 2.2rem;
+    height: 2.2rem;
+    display: block;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      transform: rotate(180deg);
+    }
+
+    @media (max-width: 31.25em) {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  &__text {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 6.5px;
+    color: #848484;
+
+    margin-left: 1.5rem;
+
+    @media (max-width: 31.25em) {
+      font-size: 1.3rem;
+      line-height: 1.3rem;
+    }
+  }
+}

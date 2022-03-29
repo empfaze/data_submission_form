@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="stylesheet" href="css/index.min.css" />
+  <script defer src="js/app.min.js"></script>
+  <title>Форма отправки данных</title>
+</head>
+
+
+  <body>
+    <div class="main-wrapper">
+      <div class="content-wrapper">
+        <header class="header">
+  <a
+    href="#"
+    target="_blank"
+    aria-label="Логотип"
+    rel="noopener"
+    class="header__logo"
+  >
+    <svg class="header__logo">
+      <use xlink:href="./img/icons/icons.svg#header-logo"></use>
+    </svg>
+  </a>
+  <div class="header__cabinet-wrapper cabinet">
+    <a
+      href="#"
+      target="_blank"
+      aria-label="Логотип личного кабинета"
+      rel="noopener"
+    >
+      <svg class="cabinet__logo">
+        <use xlink:href="./img/icons/icons.svg#cabinet-icon"></use>
+      </svg>
+    </a>
+    <a
+      href="#"
+      target="_blank"
+      aria-label="Логотип личного кабинета"
+      rel="noopener"
+    >
+      <span class="cabinet__text"> Личный кабинет </span>
+    </a>
+  </div>
+</header>
+ <main class="main">
+  <section class="logos">
+  <div class="logos__wrapper">
+    <picture>
+      <source
+        class="logos__image"
+        srcset="./img/img01-mobile.webp"
+        type="image/webp"
+        media="(max-width: 500px)"
+      />
+      <source
+        class="logos__image"
+        srcset="./img/img01-mobile.png"
+        type="image/png"
+        media="(max-width: 500px)"
+      />
+      <source
+        class="logos__image"
+        srcset="./img/img01-desktop.webp"
+        type="image/webp"
+      />
+      <img src="./img/img01-desktop.png" alt="" class="logos__image" />
+    </picture>
+    <div class="logos__reinvest-wrapper reinvest">
+      <div class="reinvest__logo-wrapper">
+        <svg class="reinvest__logo">
+          <use xlink:href="./img/icons/icons.svg#reload-svg"></use>
+        </svg>
+        <span class="reinvest__text">Lorem Ipsum Dolor</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="heading">
+  <h1 class="heading__primary">Lorem</h1>
+  <p class="heading__text">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic dolorem iste
+    labore nostrum veritatis ea corporis amet.
+  </p>
+</section>
+
+  <section class="form">
+  <div class="form__wrapper">
+    <p class="form__info-text">
+      *Поля, отмеченные звездочками, обязательны для заполнения.
+    </p>
+    <form id="form">
+      <div class="form__input-wrapper">
+        <input type="text" id="name" placeholder="ФИО*" autocomplete="off" />
+        <span class="empty-error">Пожалуйста, укажите ФИО</span>
+        <span class="incomplete-error">Укажите ФИО точно, как в паспорте</span>
+        <label for="name">Укажите ФИО точно, как в&nbsp;паспорте</label>
+      </div>
+      <div class="form__input-wrapper">
+        <input
+          type="text"
+          id="date"
+          autocomplete="date"
+          placeholder="Дата рождения*"
+          class="masked"
+          data-mask="##.##.####"
+        />
+        <span class="empty-error">Пожалуйста, введите дату</span>
+        <span class="incomplete-error">Неверный формат ввода даты</span>
+        <label for="date"
+          >Укажите дату рождения в формате
+          <span style="white-space: nowrap">ДД.ММ.ГГГГ</span></label
+        >
+      </div>
+      <div class="form__input-wrapper">
+        <input
+          type="tel"
+          id="phone"
+          autocomplete="tel"
+          placeholder="Мобильный телефон*"
+          class="masked"
+          data-mask="+7 (###) ###-##-##"
+        />
+        <span class="empty-error">Пожалуйста, укажите номер телефона</span>
+        <span class="incomplete-error">Неверный формат ввода телефона</span>
+        <label for="phone"
+          >Вы&nbsp;должны являться абонентом (владельцем) указанного номера
+          телефона</label
+        >
+      </div>
+      <div class="form__input-wrapper">
+        <input type="email" id="email" placeholder="Электронная почта*" />
+        <span class="empty-error">Пожалуйста, укажите свой e-mail</span>
+        <span class="incomplete-error">Неверный формат ввода e-mail</span>
+        <label for="email"
+          >Укажите свой действительный e-mail, на&nbsp;него будет направлена
+          информация о&nbsp;покупке</label
+        >
+      </div>
+    </form>
+  </div>
+  <p class="form__disclaimer">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+    perspiciatis accusamus. Sequi deserunt aperiam modi vitae qui voluptatem
+    illo rem dolorum, ea earum corporis libero tempora ut, nulla aliquam
+    doloremque!
+  </p>
+  <button class="form__btn" id="submit-btn" disabled="true">
+    Отправить заявку
+  </button>
+</section>
+
+  <section class="prefooter">
+  <p class="prefooter__text">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+  </p>
+</section>
+
+</main>
+
+      </div>
+    </div>
+    <footer class="footer">
+  <div class="footer__wrapper">
+    <span class="footer__title--upper">
+      Если у&nbsp;вас остались вопросы, позвоните&nbsp;нам.
+    </span>
+    <div class="footer__text-wrapper">
+      <span class="footer__title">
+        Если у&nbsp;вас остались вопросы, позвоните нам.
+      </span>
+      <span class="footer__text">
+        &copy;&nbsp;2022 Группа &laquo;Lorem Ipsum&raquo;
+      </span>
+    </div>
+    <div class="footer__icon-wrapper">
+      <a target="_blank" href="https://vk.com" class="footer__link">
+        <img src="./img/vk-icon.svg" alt="VK Icon" class="footer__icon" />
+      </a>
+      <a target="_blank" href="https://zen.yandex.ru" class="footer__link">
+        <img src="./img/zen-icon.svg" alt="Yandex.Zen Icon" class="footer__icon" />
+      </a>
+      <a
+        target="_blank"
+        href="https://web.telegram.org/z/"
+        class="footer__link"
+      >
+        <img src="./img/tg-icon.svg" alt="Telegram Icon" class="footer__icon" />
+      </a>
+    </div>
+    <div class="footer__number-wrapper">
+      <a href="tel: +78008008080" class="footer__phone">
+        8&nbsp;800&nbsp;800&nbsp;80&nbsp;80
+      </a>
+      <span class="footer__time">
+        09&zwnj;.&zwnj;00—21&zwnj;.&zwnj;00 (Мск)
+      </span>
+    </div>
+  </div>
+</footer>
+ <div class="popup invisible" id="success-popup">
+  <div class="popup__wrapper" id="success-wrapper">
+    <button class="popup__close-btn" id="success-btn">
+      <svg class="popup__close-icon">
+        <use xlink:href="./img/icons/icons.svg#ico-close"></use>
+      </svg>
+    </button>
+    <div class="popup__content">
+      <h2 class="green">Заявка отправлена</h2>
+      <p>
+        Спасибо! Мы уже
+        <span style="white-space: nowrap">получили вашу заявку.</span><br />В
+        ближайшее время менеджер свяжется с вами по указанному телефону.
+      </p>
+    </div>
+  </div>
+</div>
+
+    <div class="popup invisible" id="error-popup">
+  <div class="popup__wrapper" id="error-wrapper">
+    <button class="popup__close-btn" id="error-btn">
+      <svg class="popup__close-icon">
+        <use xlink:href="./img/icons/icons.svg#ico-close"></use>
+      </svg>
+    </button>
+    <div class="popup__content">
+      <h2>Произошла ошибка</h2>
+      <p>
+        Извините, что-то пошло не так.<br />Попробуйте, пожалуйста, еще раз.
+      </p>
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
