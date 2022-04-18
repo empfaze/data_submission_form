@@ -36,7 +36,7 @@
     display: block;
     transition: all 0.2s ease-in;
 
-    &:hover {
+    body.desktop &:hover {
       transform: rotate(180deg);
     }
 

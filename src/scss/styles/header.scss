@@ -49,7 +49,7 @@
     stroke-width: 2;
     transition: all 0.1s ease-in;
 
-    &:hover {
+    body.desktop &:hover {
       stroke: #f75d77;
     }
   }
@@ -61,5 +61,10 @@
 
     margin-left: 0.8rem;
     cursor: pointer;
+    transition: all 0.1s ease-in;
+
+    body.desktop &:hover {
+      color: #ee0029;
+    }
   }
 }

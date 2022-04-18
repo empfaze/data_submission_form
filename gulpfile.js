@@ -1,6 +1,7 @@
 import gulp from "gulp";
 import { path } from "./gulp/config/path.js";
 import { plugins } from "./gulp/config/plugins.js";
+import ghPages from "gulp-gh-pages";
 
 global.app = {
   isBuild: process.argv.includes("--build"),

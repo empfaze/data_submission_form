@@ -143,5 +143,9 @@
       font-weight: 500;
       font-family: inherit;
     }
+
+    body.desktop &:not(:disabled):hover {
+      background-color: #be112d;
+    }
   }
 }

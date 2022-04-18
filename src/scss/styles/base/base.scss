@@ -16,6 +16,10 @@ body.mobile *:focus {
   outline: none;
 }
 
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
 html {
   font-size: 62.5%;
 }
